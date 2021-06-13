@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="UIReplicationOne.Views.WelcomePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customrenderer="clr-namespace:UIReplicationOne.CustomRenderer"
+    BackgroundColor="#0041C4">
+    <StackLayout>
+
+        <!--<customrenderer:FormattedButton Style="{StaticResource button_Google_Sing_In}">
+            <customrenderer:FormattedButton.FormattedText>
+                <FormattedString>
+                    <Span Text="Google" />
+                    <Span Text=" Sign in with Google" />
+                </FormattedString>
+            </customrenderer:FormattedButton.FormattedText>
+        </customrenderer:FormattedButton>
+
+        <customrenderer:CustomImageButton
+            ContentLayout="Left,5"
+            HorizontalOptions="StartAndExpand"
+            ImageSource="https://image.flaticon.com/icons/png/512/281/281764.png"
+            Text="Left icon"
+            WidthRequest="100" />-->
+
+        <Frame>
+            <Grid HorizontalOptions="StartAndExpand">
+                <Label
+                    FontSize="25"
+                    Style="{StaticResource symbol_Google_Sing_In}"
+                    Text="Google" />
+
+                <Button
+                    Grid.Column="2"
+                    Text="Sign Ing"
+                    TextColor="#0041C4" />
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>
+<!--  Style="{StaticResource symbol_Google_Sing_In}"  -->

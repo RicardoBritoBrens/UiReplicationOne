@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="ModelViews\" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Fonts\FontAwesome5FreeRegular400.otf" />
+    <None Remove="Resources\Fonts\FontAwesome5Regular400.otf" />
+    <None Remove="Resources\Fonts\FontAwesome5Solid900.otf" />
+    <None Remove="Resources\Fonts\" />
+    <None Remove="CustomRenderer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ModelViews\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="CustomRenderer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome5FreeRegular400.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome5Regular400.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome5Solid900.otf" />
+  </ItemGroup>
+</Project>
