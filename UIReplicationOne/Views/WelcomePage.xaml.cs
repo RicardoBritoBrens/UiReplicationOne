@@ -9,7 +9,7 @@ namespace UIReplicationOne.Views
     {
         public WelcomePage()
         {
-            BindingContext = new WelcomePageViewModel();
+            BindingContext = new WelcomePageViewModel(Navigation);
             InitializeComponent();
         }
     }

@@ -13,6 +13,8 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
@@ -22,14 +24,14 @@
     <None Remove="Resources\Fonts\FontAwesome5Regular400.otf" />
     <None Remove="Resources\Fonts\FontAwesome5Solid900.otf" />
     <None Remove="Resources\Fonts\" />
-    <None Remove="CustomRenderer\" />
+    <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="Xamarin.Forms.PancakeView" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ModelViews\" />
     <Folder Include="Resources\" />
     <Folder Include="Resources\Fonts\" />
-    <Folder Include="CustomRenderer\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Fonts\FontAwesome5FreeRegular400.otf" />

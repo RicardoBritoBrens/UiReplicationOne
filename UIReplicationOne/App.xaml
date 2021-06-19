@@ -21,17 +21,14 @@
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="FontFamily" Value="FormAwesome5Regular" />
             </Style>
-
             <Style x:Key="welcomePageFourthLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="FormAwesome5Regular" />
             </Style>
-
             <Style x:Key="welcomePageFifthLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="FormAwesome5Regular" />
             </Style>
-
             <Style x:Key="button_Google_Sing_In" TargetType="Button">
                 <Setter Property="TextColor" Value="#0041C4" />
                 <Setter Property="BackgroundColor" Value="#FEFEFF" />
@@ -44,7 +41,23 @@
                 <Setter Property="TextColor" Value="#0041C4" />
                 <Setter Property="BackgroundColor" Value="#FEFEFF" />
             </Style>
+            <Style x:Key="text_Google_Sing_In" TargetType="Label">
+                <Setter Property="TextColor" Value="#0041C4" />
+                <Setter Property="BackgroundColor" Value="#FEFEFF" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
             <Style x:Key="button_Create_an_Account" TargetType="Button">
+                <Setter Property="TextColor" Value="#FEFEFF" />
+                <Setter Property="BackgroundColor" Value="#1D42C4" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HeightRequest" Value="38" />
+                <Setter Property="BorderColor" Value="White" />
+                <Setter Property="BorderWidth" Value="0.5" />
+                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+            </Style>
+
+            <Style x:Key="sign_In_Page_Sign_In_Button" TargetType="Button">
                 <Setter Property="TextColor" Value="#FEFEFF" />
                 <Setter Property="BackgroundColor" Value="#1D42C4" />
                 <Setter Property="CornerRadius" Value="15" />

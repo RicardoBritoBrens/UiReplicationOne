@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace UIReplicationOne.Views
 {
-    public partial class LoginPage : ContentPage
+    public partial class SignInPage : ContentPage
     {
-        public LoginPage()
+        public SignInPage()
         {
             InitializeComponent();
         }

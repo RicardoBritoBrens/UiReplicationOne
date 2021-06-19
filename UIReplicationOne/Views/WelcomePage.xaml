@@ -3,39 +3,79 @@
     x:Class="UIReplicationOne.Views.WelcomePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:customrenderer="clr-namespace:UIReplicationOne.CustomRenderer"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     BackgroundColor="#0041C4">
-    <StackLayout>
+    <AbsoluteLayout Margin="44" Style="{StaticResource welcomePageBackground}">
 
-        <!--<customrenderer:FormattedButton Style="{StaticResource button_Google_Sing_In}">
-            <customrenderer:FormattedButton.FormattedText>
-                <FormattedString>
-                    <Span Text="Google" />
-                    <Span Text=" Sign in with Google" />
-                </FormattedString>
-            </customrenderer:FormattedButton.FormattedText>
-        </customrenderer:FormattedButton>
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,1,0.07" AbsoluteLayout.LayoutFlags="All">
 
-        <customrenderer:CustomImageButton
-            ContentLayout="Left,5"
-            HorizontalOptions="StartAndExpand"
-            ImageSource="https://image.flaticon.com/icons/png/512/281/281764.png"
-            Text="Left icon"
-            WidthRequest="100" />-->
+            <!--  First element  -->
+            <Label
+                FontAttributes="Bold"
+                FontSize="Title"
+                Style="{StaticResource welcomePageFirstLabel}"
+                Text="Welcome" />
 
-        <Frame>
-            <Grid HorizontalOptions="StartAndExpand">
-                <Label
-                    FontSize="25"
-                    Style="{StaticResource symbol_Google_Sing_In}"
-                    Text="Google" />
+        </StackLayout>
 
-                <Button
-                    Grid.Column="2"
-                    Text="Sign Ing"
-                    TextColor="#0041C4" />
-            </Grid>
-        </Frame>
-    </StackLayout>
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.6,1,0.04" AbsoluteLayout.LayoutFlags="All">
+
+            <!--  Second element  -->
+            <Label Style="{StaticResource welcomePageSecondLabel}" Text="Manage Your expenses" />
+
+            <!--  Third element  -->
+            <Label
+                FontSize="16"
+                Style="{StaticResource welcomePageThirdLabel}"
+                Text="seamlessly &amp; intuitively" />
+
+        </StackLayout>
+
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.5,0.8,1,0.07"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="16">
+
+            <!--  Fourth element  -->
+            <StackLayout
+                xct:TouchEffect.AnimationDuration="250"
+                xct:TouchEffect.Command="{Binding NavigateToSignInPageCommand}"
+                xct:TouchEffect.PressedBackgroundColor="#2196f3"
+                xct:TouchEffect.PressedOpacity="0.5">
+                <Frame Padding="10" CornerRadius="15">
+                    <Grid ColumnDefinitions="20*,50*" RowDefinitions="18">
+                        <Label
+                            Grid.Column="0"
+                            Style="{StaticResource symbol_Google_Sing_In}"
+                            Text="Google"
+                            VerticalOptions="Center" />
+                        <Label
+                            Grid.Column="1"
+                            Style="{StaticResource text_Google_Sing_In}"
+                            Text="Sign in with Google"
+                            VerticalOptions="Center" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+
+            <!--  Fifth element  -->
+            <Button Style="{StaticResource button_Create_an_Account}" Text="Create an account" />
+        </StackLayout>
+
+        <!--  Fifth element  -->
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.5,0.9999,1,0.07"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            Spacing="0">
+            <Label
+                Opacity="0.6"
+                Style="{StaticResource welcomePageFourthLabel}"
+                Text="Already have an account?" />
+
+            <!--  Sixth element  -->
+            <Label Style="{StaticResource welcomePageFifthLabel}" Text="Sing in" />
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>
-<!--  Style="{StaticResource symbol_Google_Sing_In}"  -->
