@@ -5,71 +5,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:xtk="http://xamarin.com/schemas/2020/toolkit"
-    BackgroundColor="Transparent"
     BackgroundImageSource="Sign_In_Background_UI_Replication_One.png"
-    Visual="Material">
-    <AbsoluteLayout>
-        <!--  TODO: Download XamarinCommunityToolkit and look for entry effect and entry mask to remove underline  -->
-        <!--  TODO: Customize Navigation bar to put image that complete the design  -->
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,0.88,0.94" AbsoluteLayout.LayoutFlags="All">
-            <Label
-                FontAttributes="Bold"
-                FontSize="Title"
-                Text="Sing in"
-                TextColor="White" />
-        </StackLayout>
-        <pancake:PancakeView
-            AbsoluteLayout.LayoutBounds="0.5,1,1,0.90"
-            AbsoluteLayout.LayoutFlags="All"
-            BackgroundColor="White"
-            CornerRadius="35,35,0,0">
-
-
-            <Grid Margin="25" RowDefinitions="50,25,auto,24,90,40,50">
-                <StackLayout Grid.Row="0">
-                    <Label
-                        FontAttributes="Bold"
-                        FontSize="24"
-                        Text="Welcome Back"
-                        TextColor="Black" />
-                    <Label Text="Hello there, sing in to continue!" TextColor="Black" />
-                </StackLayout>
-
-
-                <StackLayout Grid.Row="2" Spacing="15">
-                    <Label Text="Username or email" TextColor="Black" />
-                    <Frame
-                        Padding="0"
-                        BackgroundColor="#f6f7f9"
-                        CornerRadius="15">
-                        <Entry Placeholder="Enter your username or email" />
-                    </Frame>
-                </StackLayout>
-
-
-                <StackLayout Grid.Row="4" Spacing="15">
-
-                    <Label Text="Password" TextColor="Black" />
-                    <Frame
-                        Padding="0"
-                        BackgroundColor="#f6f7f9"
-                        CornerRadius="15">
-                        <Entry IsPassword="True" Placeholder="Enter your password" />
-                    </Frame>
-
-                </StackLayout>
-
+    NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Frame BackgroundColor="Transparent" HeightRequest="56">
+            <Grid ColumnDefinitions="20*,80*">
                 <Label
-                    Grid.Row="5"
-                    Text="Forgot Passowrd?"
-                    TextColor="#1d459d" />
-
-                <Button
-                    Grid.Row="6"
-                    FontSize="Subtitle"
-                    Style="{StaticResource sign_In_Page_Sign_In_Button}"
-                    Text="Sign in" />
+                    BackgroundColor="BlanchedAlmond"
+                    Style="{StaticResource sing_In_Label}"
+                    Text="" />
             </Grid>
-        </pancake:PancakeView>
-    </AbsoluteLayout>
+        </Frame>
+    </StackLayout>
 </ContentPage>

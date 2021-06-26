@@ -1,0 +1,4 @@
+﻿
+Navigation bar transparent: https://xamgirl.com/transparent-navigation-bar-in-xamarin-forms/
+Remove Border Effect or Underline on an entry: https://github.com/xamarin/XamarinCommunityToolkit/blob/main/samples/XCT.Sample/Pages/Effects/RemoveBorderEffectPage.xaml
+Using Font Awesome instead of icons images: https://talkwithangel.com/cabanasrd-from-native-to-cross-platform-with-xamarin-forms-1-4/

@@ -1,4 +1,5 @@
 ﻿using System;
+using UIReplicationOne.CustomRenders;
 using UIReplicationOne.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -14,6 +15,7 @@ namespace UIReplicationOne
             MainPage = new NavigationPage(new WelcomePage());
         }
 
+
         protected override void OnStart()
         {
         }
@@ -23,6 +25,10 @@ namespace UIReplicationOne
         }
 
         protected override void OnResume()
+        {
+        }
+
+        void OnBackButtonPressed(System.Object sender, System.EventArgs e)
         {
         }
     }

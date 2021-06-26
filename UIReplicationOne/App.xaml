@@ -67,6 +67,10 @@
                 <Setter Property="BorderWidth" Value="0.5" />
                 <Setter Property="FontFamily" Value="FormAwesome5Regular" />
             </Style>
+            <Style x:Key="sing_In_Label" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

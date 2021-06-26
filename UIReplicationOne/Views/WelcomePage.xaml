@@ -28,7 +28,6 @@
                 FontSize="16"
                 Style="{StaticResource welcomePageThirdLabel}"
                 Text="seamlessly &amp; intuitively" />
-
         </StackLayout>
 
         <StackLayout
