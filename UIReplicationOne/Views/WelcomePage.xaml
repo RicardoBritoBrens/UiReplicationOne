@@ -5,17 +5,14 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     BackgroundColor="#0041C4">
-    <AbsoluteLayout Margin="44" Style="{StaticResource welcomePageBackground}">
-
+    <AbsoluteLayout Margin="44" Style="{StaticResource welcomePageBackgroundColor}">
         <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,1,0.07" AbsoluteLayout.LayoutFlags="All">
 
             <!--  First element  -->
             <Label
-                FontAttributes="Bold"
                 FontSize="Title"
                 Style="{StaticResource welcomePageFirstLabel}"
                 Text="Welcome" />
-
         </StackLayout>
 
         <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.6,1,0.04" AbsoluteLayout.LayoutFlags="All">
@@ -30,12 +27,11 @@
                 Text="seamlessly &amp; intuitively" />
         </StackLayout>
 
+        <!--  Start Fourth element  -->
         <StackLayout
             AbsoluteLayout.LayoutBounds="0.5,0.8,1,0.07"
             AbsoluteLayout.LayoutFlags="All"
             Spacing="16">
-
-            <!--  Fourth element  -->
             <StackLayout
                 xct:TouchEffect.AnimationDuration="250"
                 xct:TouchEffect.Command="{Binding NavigateToSignInPageCommand}"
@@ -45,23 +41,24 @@
                     <Grid ColumnDefinitions="20*,50*" RowDefinitions="18">
                         <Label
                             Grid.Column="0"
-                            Style="{StaticResource symbol_Google_Sing_In}"
-                            Text="Google"
+                            Style="{StaticResource symbol_Google_Sing_In_Button}"
+                            Text="google"
                             VerticalOptions="Center" />
                         <Label
                             Grid.Column="1"
-                            Style="{StaticResource text_Google_Sing_In}"
+                            Style="{StaticResource text_Google_Sing_In_Button}"
                             Text="Sign in with Google"
                             VerticalOptions="Center" />
                     </Grid>
                 </Frame>
             </StackLayout>
+            <!--  End Fourth element  -->
 
             <!--  Fifth element  -->
-            <Button Style="{StaticResource button_Create_an_Account}" Text="Create an account" />
+            <Button Style="{StaticResource button_Create_An_Account}" Text="Create an account" />
         </StackLayout>
 
-        <!--  Fifth element  -->
+        <!--  Start Fifth element  -->
         <StackLayout
             AbsoluteLayout.LayoutBounds="0.5,0.9999,1,0.07"
             AbsoluteLayout.LayoutFlags="All"
@@ -72,9 +69,11 @@
                 Opacity="0.6"
                 Style="{StaticResource welcomePageFourthLabel}"
                 Text="Already have an account?" />
+            <!--  End Fifth element  -->
+
 
             <!--  Sixth element  -->
-            <Label Style="{StaticResource welcomePageFifthLabel}" Text="Sing in" />
+            <Label Style="{StaticResource welcomePageSixthLabel}" Text="Sing in" />
         </StackLayout>
     </AbsoluteLayout>
 </ContentPage>

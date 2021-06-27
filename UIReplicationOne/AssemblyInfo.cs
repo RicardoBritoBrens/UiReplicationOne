@@ -2,6 +2,7 @@
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-[assembly: ExportFont("FontAwesome5FreeRegular400.otf", Alias = "FormAwesomeSymbols")]
-[assembly: ExportFont("FontAwesome5Regular400.otf", Alias = "FormAwesomeRegular")]
-[assembly: ExportFont("FontAwesome5Solid900.otf", Alias = "FormAwesomeRegularBold")]
+[assembly: ExportFont("FontAwesomeBrandsRegular.otf", Alias = "FontAwesomeBrandsRegular")]
+[assembly: ExportFont("FontAwesomeRegular.otf", Alias = "FontAwesomeRegular")]
+[assembly: ExportFont("FontAwesomeSolid.otf", Alias = "FontAwesomeSolid")]
+[assembly: ExportFont("AcehLight3.ttf", Alias = "SonnyVol2Bold")]

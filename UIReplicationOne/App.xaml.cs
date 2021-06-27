@@ -1,8 +1,5 @@
-﻿using System;
-using UIReplicationOne.CustomRenders;
-using UIReplicationOne.Views;
+﻿using UIReplicationOne.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace UIReplicationOne
 {

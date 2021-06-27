@@ -15,19 +15,18 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-    <PackageReference Include="Prism.Forms" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
     <None Remove="ModelViews\" />
     <None Remove="Resources\" />
-    <None Remove="Resources\Fonts\FontAwesome5FreeRegular400.otf" />
-    <None Remove="Resources\Fonts\FontAwesome5Regular400.otf" />
-    <None Remove="Resources\Fonts\FontAwesome5Solid900.otf" />
     <None Remove="Resources\Fonts\" />
     <None Remove="Xamarin.CommunityToolkit" />
     <None Remove="Xamarin.Forms.PancakeView" />
     <None Remove="Prism.Forms" />
+    <None Remove="Resources\Fonts\FontAwesomeBrandsRegular.otf" />
+    <None Remove="Resources\Fonts\FontAwesomeRegular.otf" />
+    <None Remove="Resources\Fonts\FontAwesomeSolid.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -36,8 +35,8 @@
     <Folder Include="Resources\Fonts\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Fonts\FontAwesome5FreeRegular400.otf" />
-    <EmbeddedResource Include="Resources\Fonts\FontAwesome5Regular400.otf" />
-    <EmbeddedResource Include="Resources\Fonts\FontAwesome5Solid900.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesomeBrandsRegular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesomeRegular.otf" />
+    <EmbeddedResource Include="Resources\Fonts\FontAwesomeSolid.otf" />
   </ItemGroup>
 </Project>

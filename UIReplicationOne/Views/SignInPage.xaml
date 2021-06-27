@@ -3,18 +3,28 @@
     x:Class="UIReplicationOne.Views.SignInPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fontawesome="clr-namespace:UIReplicationOne.Resources.Fonts"
     xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:xtk="http://xamarin.com/schemas/2020/toolkit"
     BackgroundImageSource="Sign_In_Background_UI_Replication_One.png"
     NavigationPage.HasNavigationBar="False">
+    <!--  Custom Navigation Transparent Bar  -->
     <StackLayout>
         <Frame BackgroundColor="Transparent" HeightRequest="56">
             <Grid ColumnDefinitions="20*,80*">
+
+                <!--  First element  -->
                 <Label
-                    BackgroundColor="BlanchedAlmond"
-                    Style="{StaticResource sing_In_Label}"
-                    Text="" />
+                    FontFamily="FontAwesomeSolid"
+                    FontSize="26"
+                    Text="{x:Static fontawesome:FontAwesomeIcons.ArrowLeft}"
+                    TextColor="White" />
             </Grid>
         </Frame>
+
+        <StackLayout>
+            <Label Text="Sign in" />
+        </StackLayout>
+
     </StackLayout>
 </ContentPage>

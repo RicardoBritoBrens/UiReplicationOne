@@ -5,59 +5,48 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <Application.Resources>
         <ResourceDictionary>
-            <Style x:Key="welcomePageBackground" TargetType="StackLayout">
+            <!--  =============== Start style for Welcome Page ================  -->
+
+            <!--  Welcome Page Background Color  -->
+            <Style x:Key="welcomePageBackgroundColor" TargetType="StackLayout">
                 <Setter Property="BackgroundColor" Value="#0041C4" />
             </Style>
+
+            <!--  First element  -->
             <Style x:Key="welcomePageFirstLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
             </Style>
+
+            <!--  Second element  -->
             <Style x:Key="welcomePageSecondLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+                <Setter Property="FontFamily" Value="FontAwesomeRegular" />
             </Style>
+
+            <!--  Third element  -->
             <Style x:Key="welcomePageThirdLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
-            </Style>
-            <Style x:Key="welcomePageFourthLabel" TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
-            </Style>
-            <Style x:Key="welcomePageFifthLabel" TargetType="Label">
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
-            </Style>
-            <Style x:Key="button_Google_Sing_In" TargetType="Button">
-                <Setter Property="TextColor" Value="#0041C4" />
-                <Setter Property="BackgroundColor" Value="#FEFEFF" />
-                <Setter Property="CornerRadius" Value="15" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HeightRequest" Value="38" />
-            </Style>
-            <Style x:Key="symbol_Google_Sing_In" TargetType="Label">
-                <Setter Property="FontFamily" Value="FormAwesomeRegular" />
-                <Setter Property="TextColor" Value="#0041C4" />
-                <Setter Property="BackgroundColor" Value="#FEFEFF" />
-            </Style>
-            <Style x:Key="text_Google_Sing_In" TargetType="Label">
-                <Setter Property="TextColor" Value="#0041C4" />
-                <Setter Property="BackgroundColor" Value="#FEFEFF" />
-                <Setter Property="FontAttributes" Value="Bold" />
-            </Style>
-            <Style x:Key="button_Create_an_Account" TargetType="Button">
-                <Setter Property="TextColor" Value="#FEFEFF" />
-                <Setter Property="BackgroundColor" Value="#1D42C4" />
-                <Setter Property="CornerRadius" Value="15" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HeightRequest" Value="38" />
-                <Setter Property="BorderColor" Value="White" />
-                <Setter Property="BorderWidth" Value="0.5" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
             </Style>
 
-            <Style x:Key="sign_In_Page_Sign_In_Button" TargetType="Button">
+            <!--  Start Fourth element  -->
+            <Style x:Key="symbol_Google_Sing_In_Button" TargetType="Label">
+                <Setter Property="FontFamily" Value="FontAwesomeBrandsRegular" />
+                <Setter Property="TextColor" Value="#0041C4" />
+                <Setter Property="BackgroundColor" Value="#FEFEFF" />
+            </Style>
+            <Style x:Key="text_Google_Sing_In_Button" TargetType="Label">
+                <Setter Property="TextColor" Value="#0041C4" />
+                <Setter Property="BackgroundColor" Value="#FEFEFF" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <!--  End Fourth element  -->
+
+            <!--  Fifth element  -->
+            <Style x:Key="button_Create_An_Account" TargetType="Button">
                 <Setter Property="TextColor" Value="#FEFEFF" />
                 <Setter Property="BackgroundColor" Value="#1D42C4" />
                 <Setter Property="CornerRadius" Value="15" />
@@ -65,12 +54,29 @@
                 <Setter Property="HeightRequest" Value="38" />
                 <Setter Property="BorderColor" Value="White" />
                 <Setter Property="BorderWidth" Value="0.5" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
             </Style>
-            <Style x:Key="sing_In_Label" TargetType="Label">
+
+            <!--  Sixth element  -->
+            <Style x:Key="welcomePageSixthLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontFamily" Value="FormAwesome5Regular" />
+                <Setter Property="FontFamily" Value="FontAwesomeRegular" />
             </Style>
+            <!--  End style for welcome page  -->
+
+            <!--  =============== End style for Welcome Page =================  -->
+
+
+
+
+
+            <!--  =============== Start style for Sign In Page ===============  -->
+            <Style x:Key="sign_In_Page_Back_Lavel" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+            </Style>
+            <!--  =============== End style for Sign In Page =================  -->
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>
