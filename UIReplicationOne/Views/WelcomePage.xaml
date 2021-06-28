@@ -27,11 +27,13 @@
                 Text="seamlessly &amp; intuitively" />
         </StackLayout>
 
-        <!--  Start Fourth element  -->
+
         <StackLayout
             AbsoluteLayout.LayoutBounds="0.5,0.8,1,0.07"
             AbsoluteLayout.LayoutFlags="All"
             Spacing="16">
+
+            <!--  Start Fourth element  -->
             <StackLayout
                 xct:TouchEffect.AnimationDuration="250"
                 xct:TouchEffect.Command="{Binding NavigateToSignInPageCommand}"
@@ -58,22 +60,16 @@
             <Button Style="{StaticResource button_Create_An_Account}" Text="Create an account" />
         </StackLayout>
 
-        <!--  Start Fifth element  -->
+        <!--  Start Sixth element  -->
         <StackLayout
             AbsoluteLayout.LayoutBounds="0.5,0.9999,1,0.07"
             AbsoluteLayout.LayoutFlags="All"
             HorizontalOptions="Center"
             Orientation="Horizontal"
             Spacing="0">
-            <Label
-                Opacity="0.6"
-                Style="{StaticResource welcomePageFourthLabel}"
-                Text="Already have an account?" />
-            <!--  End Fifth element  -->
-
-
-            <!--  Sixth element  -->
-            <Label Style="{StaticResource welcomePageSixthLabel}" Text="Sing in" />
+            <Label Style="{StaticResource welcomePageSixthLabelFirst}" Text="Already have an account?" />
+            <Label Style="{StaticResource welcomePageSixthLabelSecond}" Text="Sing in" />
         </StackLayout>
+        <!--  End Sixth element  -->
     </AbsoluteLayout>
 </ContentPage>

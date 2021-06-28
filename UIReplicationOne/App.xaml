@@ -58,7 +58,13 @@
             </Style>
 
             <!--  Sixth element  -->
-            <Style x:Key="welcomePageSixthLabel" TargetType="Label">
+            <Style x:Key="welcomePageSixthLabelFirst" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="FontAwesomeRegular" />
+                <Setter Property="Opacity" Value="0.6" />
+            </Style>
+
+            <Style x:Key="welcomePageSixthLabelSecond" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="FontAwesomeRegular" />
             </Style>

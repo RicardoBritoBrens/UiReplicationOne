@@ -8,12 +8,12 @@
     xmlns:xtk="http://xamarin.com/schemas/2020/toolkit"
     BackgroundImageSource="Sign_In_Background_UI_Replication_One.png"
     NavigationPage.HasNavigationBar="False">
-    <!--  Custom Navigation Transparent Bar  -->
+    <!--  Start Custom Navigation Transparent Bar  -->
+
+    <!--  First element  -->
     <StackLayout>
         <Frame BackgroundColor="Transparent" HeightRequest="56">
             <Grid ColumnDefinitions="20*,80*">
-
-                <!--  First element  -->
                 <Label
                     FontFamily="FontAwesomeSolid"
                     FontSize="26"
@@ -21,10 +21,37 @@
                     TextColor="White" />
             </Grid>
         </Frame>
+        <!--  End Custom Navigation Transparent Bar  -->
 
-        <StackLayout>
-            <Label Text="Sign in" />
-        </StackLayout>
+        <Grid
+            Margin="44"
+            BackgroundColor="AliceBlue"
+            RowDefinitions="10*,10*,10*,20*,50*">
+            <Label Grid.Row="0" Text="Sign in" />
+
+            <StackLayout Grid.Row="1">
+                <Label Text="Welcome Back" />
+                <Label Text="Hello there, sign in to continue!" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="2">
+                <Label Text="Username or email" />
+                <Entry Placeholder="Enter your username or email" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="3">
+                <Label Text="Password" />
+                <Entry IsPassword="True" Placeholder="Enter your password" />
+                <Label Text="Forgot Password?" />
+            </StackLayout>
+
+            <Button Grid.Row="4" Text="Sign in" />
+
+            <StackLayout Grid.Row="5" Orientation="Horizontal">
+                <Label Text="Don't have an account?" />
+                <Entry Placeholder="Sign up" />
+            </StackLayout>
+        </Grid>
 
     </StackLayout>
 </ContentPage>
