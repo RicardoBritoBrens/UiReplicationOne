@@ -2,9 +2,13 @@
 <Application
     x:Class="UIReplicationOne.App"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows">
     <Application.Resources>
         <ResourceDictionary>
+            <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
+                <Setter Property="rainbows:DebugRainbow.ShowColors" Value="False" />
+            </Style>
             <!--  =============== Start style for Welcome Page ================  -->
 
             <!--  Welcome Page Background Color  -->
@@ -63,7 +67,6 @@
                 <Setter Property="FontFamily" Value="FontAwesomeRegular" />
                 <Setter Property="Opacity" Value="0.6" />
             </Style>
-
             <Style x:Key="welcomePageSixthLabelSecond" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="FontAwesomeRegular" />
@@ -74,13 +77,91 @@
 
 
 
-
-
             <!--  =============== Start style for Sign In Page ===============  -->
-            <Style x:Key="sign_In_Page_Back_Lavel" TargetType="Label">
+
+            <!--  First element  -->
+            <Style x:Key="sign_In_Page_Sign_In_Label" TargetType="Label">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="TextColor" Value="White" />
             </Style>
+
+            <!--  Start Form content  -->
+
+
+
+            <!--  Start First form element  -->
+            <Style x:Key="sign_In_First_Form_Label" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="28" />
+            </Style>
+            <Style x:Key="sign_In_Second_Form_Label" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="Caption" />
+            </Style>
+            <!--  End First form element  -->
+
+
+            <!--  Start Second form element  -->
+            <Style x:Key="sign_In_Username_Or_Email_Form_Label" TargetType="Label">
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+            </Style>
+            <Style x:Key="sign_In_Username_Or_Email_Form_Entry" TargetType="Entry">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="BackgroundColor" Value="#f6f7f9" />
+            </Style>
+            <!--  End Second form element  -->
+
+
+            <!--  Start Third form element  -->
+            <Style x:Key="sign_In_Password_Form_Label" TargetType="Label">
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+            </Style>
+            <Style x:Key="sign_In_Password_Form_Entry" TargetType="Entry">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="BackgroundColor" Value="#f6f7f9" />
+            </Style>
+            <Style x:Key="sign_In_Forgot_Password_Form_Label" TargetType="Label">
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="TextColor" Value="#0041C4" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <!--  End Third form element  -->
+
+
+            <!--  Fourth form element  -->
+            <Style x:Key="sign_In_Sign_In_Button" TargetType="Button">
+                <Setter Property="TextColor" Value="#FEFEFF" />
+                <Setter Property="BackgroundColor" Value="#1D42C4" />
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HeightRequest" Value="38" />
+                <Setter Property="BorderColor" Value="White" />
+                <Setter Property="BorderWidth" Value="0.5" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+            </Style>
+
+            <!--  Fifth form element  -->
+            <Style x:Key="sign_In_Do_Not_Have_Account_Form_Label" TargetType="Label">
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+            </Style>
+            <Style x:Key="sign_In_Sign_Up_Form_Label" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="SonnyVol2Bold" />
+                <Setter Property="BackgroundColor" Value="#f6f7f9" />
+            </Style>
+
+
+
+            <!--  End Form content  -->
             <!--  =============== End style for Sign In Page =================  -->
 
         </ResourceDictionary>
