@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using UIReplicationOne.ModelViews;
 using Xamarin.Forms;
 
 namespace UIReplicationOne.Views
@@ -9,6 +9,7 @@ namespace UIReplicationOne.Views
     {
         public SignInPage()
         {
+            BindingContext = new SignInPageViewModel(Navigation);
             InitializeComponent();
         }
     }

@@ -84,7 +84,7 @@
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontSize" Value="24" />
                 <Setter Property="TextColor" Value="White" />
             </Style>
 
@@ -97,12 +97,11 @@
                 <Setter Property="TextColor" Value="Black" />
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontSize" Value="20" />
             </Style>
             <Style x:Key="sign_In_Second_Form_Label" TargetType="Label">
-                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="TextColor" Value="Gray" />
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
-                <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="FontSize" Value="Caption" />
             </Style>
             <!--  End First form element  -->
@@ -150,6 +149,11 @@
             </Style>
 
             <!--  Fifth form element  -->
+            <Style x:Key="empty_Botton_Stack_LayOut" TargetType="StackLayout">
+                <Setter Property="Spacing" Value="0" />
+            </Style>
+
+            <!--  Start Sixth form element  -->
             <Style x:Key="sign_In_Do_Not_Have_Account_Form_Label" TargetType="Label">
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
             </Style>
@@ -158,8 +162,7 @@
                 <Setter Property="FontFamily" Value="SonnyVol2Bold" />
                 <Setter Property="BackgroundColor" Value="#f6f7f9" />
             </Style>
-
-
+            <!--  End Sixth form element  -->
 
             <!--  End Form content  -->
             <!--  =============== End style for Sign In Page =================  -->
