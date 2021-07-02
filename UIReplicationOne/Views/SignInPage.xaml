@@ -4,7 +4,6 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:fontawesome="clr-namespace:UIReplicationOne.Resources.Fonts"
-    xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     xmlns:xtk="http://xamarin.com/schemas/2020/toolkit"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
     BackgroundImageSource="Sign_In_Background_UI_Replication_One.png"
@@ -64,39 +63,65 @@
 
                 <!--  Second form element  -->
                 <StackLayout Grid.Row="1" Spacing="14">
+
                     <Label Style="{StaticResource sign_In_Username_Or_Email_Form_Label}" Text="Username or email" />
                     <Frame
                         Padding="10,0,0,0"
                         BackgroundColor="#f6f7f9"
                         CornerRadius="20"
                         IsClippedToBounds="True">
-                        <Entry
-                            Placeholder="Enter your username or email"
-                            Style="{StaticResource sign_In_Username_Or_Email_Form_Entry}"
-                            VerticalOptions="Center">
-                            <Entry.Effects>
-                                <xtk:RemoveBorderEffect />
-                            </Entry.Effects>
-                        </Entry>
+                        <Grid ColumnDefinitions="98*,2*">
+                            <Entry
+                                Placeholder="Enter your username or email"
+                                Style="{StaticResource sign_In_Username_Or_Email_Form_Entry}"
+                                Text="{Binding Username}"
+                                VerticalOptions="Center">
+                                <Entry.Effects>
+                                    <xtk:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+                            <Label
+                                FontFamily="FontAwesomeSolid"
+                                FontSize="Title"
+                                HorizontalOptions="End"
+                                IsVisible="{Binding UsernameValid}"
+                                Text="{Static fontawesome:FontAwesomeIcons.CheckCircle}"
+                                TextColor="#00b6f8"
+                                VerticalOptions="Center" />
+                        </Grid>
+
+
                     </Frame>
                 </StackLayout>
 
 
                 <!--  Third form element  -->
                 <StackLayout Grid.Row="2" Spacing="14">
+
                     <Label Style="{StaticResource sign_In_Password_Form_Label}" Text="Password" />
                     <Frame
                         Padding="10,0,0,0"
                         BackgroundColor="#f6f7f9"
                         CornerRadius="20">
-                        <Entry
-                            IsPassword="True"
-                            Placeholder="Enter your password"
-                            Style="{StaticResource sign_In_Password_Form_Entry}">
-                            <Entry.Effects>
-                                <xtk:RemoveBorderEffect />
-                            </Entry.Effects>
-                        </Entry>
+                        <Grid ColumnDefinitions="98*,2*">
+                            <Entry
+                                IsPassword="True"
+                                Placeholder="Enter your password"
+                                Style="{StaticResource sign_In_Password_Form_Entry}"
+                                Text="{Binding Password}">
+                                <Entry.Effects>
+                                    <xtk:RemoveBorderEffect />
+                                </Entry.Effects>
+                            </Entry>
+                            <Label
+                                FontFamily="FontAwesomeSolid"
+                                FontSize="Title"
+                                HorizontalOptions="End"
+                                IsVisible="{Binding PasswordValid}"
+                                Text="{Static fontawesome:FontAwesomeIcons.CheckCircle}"
+                                TextColor="#00b6f8"
+                                VerticalOptions="Center" />
+                        </Grid>
                     </Frame>
                     <Label Style="{StaticResource sign_In_Forgot_Password_Form_Label}" Text="Forgot Password?">
                         <Label.GestureRecognizers>
@@ -109,6 +134,7 @@
                 <Button
                     Grid.Row="3"
                     Command="{Binding FakeSignInCommand}"
+                    IsEnabled="{Binding ActionEnable}"
                     Style="{StaticResource sign_In_Sign_In_Button}"
                     Text="Sign in" />
 

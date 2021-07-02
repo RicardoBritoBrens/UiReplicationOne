@@ -3,6 +3,7 @@
     x:Class="UIReplicationOne.Views.WelcomePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:fontawesome="clr-namespace:UIReplicationOne.Resources.Fonts"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     BackgroundColor="#0041C4">
     <AbsoluteLayout Margin="44" Style="{StaticResource welcomePageBackgroundColor}">
