@@ -29,12 +29,14 @@
     <None Remove="Resources\Fonts\FontAwesomeRegular.otf" />
     <None Remove="Resources\Fonts\FontAwesomeSolid.otf" />
     <None Remove="Xamarin.Forms.DebugRainbows" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="ModelViews\" />
     <Folder Include="Resources\" />
     <Folder Include="Resources\Fonts\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Fonts\FontAwesomeBrandsRegular.otf" />
