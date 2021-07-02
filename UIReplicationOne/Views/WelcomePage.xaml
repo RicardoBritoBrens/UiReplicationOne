@@ -56,9 +56,15 @@
             </StackLayout>
             <!--  End Fourth element  -->
 
-            <!--  Fifth element  -->
-            <Button Style="{StaticResource button_Create_An_Account}" Text="Create an account" />
         </StackLayout>
+        <!--  Fifth element  -->
+        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.88" AbsoluteLayout.LayoutFlags="PositionProportional">
+            <Button
+                Command="{Binding FakeCreateAnAccountCommand}"
+                Style="{StaticResource button_Create_An_Account}"
+                Text="Create an account" />
+        </StackLayout>
+
 
         <!--  Start Sixth element  -->
         <StackLayout
@@ -68,7 +74,11 @@
             Orientation="Horizontal"
             Spacing="0">
             <Label Style="{StaticResource welcomePageSixthLabelFirst}" Text="Already have an account?" />
-            <Label Style="{StaticResource welcomePageSixthLabelSecond}" Text="Sing in" />
+            <Label Style="{StaticResource welcomePageSixthLabelSecond}" Text="Sing in">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToSignInPageCommand}" />
+                </Label.GestureRecognizers>
+            </Label>
         </StackLayout>
         <!--  End Sixth element  -->
     </AbsoluteLayout>

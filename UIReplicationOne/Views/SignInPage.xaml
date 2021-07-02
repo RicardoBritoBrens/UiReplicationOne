@@ -22,7 +22,11 @@
                         FontFamily="FontAwesomeSolid"
                         FontSize="22"
                         Text="{Static fontawesome:FontAwesomeIcons.ArrowLeft}"
-                        TextColor="White" />
+                        TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateBackCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Frame>
             </Grid>
         </StackLayout>
@@ -94,12 +98,17 @@
                             </Entry.Effects>
                         </Entry>
                     </Frame>
-                    <Label Style="{StaticResource sign_In_Forgot_Password_Form_Label}" Text="Forgot Password?" />
+                    <Label Style="{StaticResource sign_In_Forgot_Password_Form_Label}" Text="Forgot Password?">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding FakeForgotPasswordCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </StackLayout>
 
                 <!--  Fourth form element  -->
                 <Button
                     Grid.Row="3"
+                    Command="{Binding FakeSignInCommand}"
                     Style="{StaticResource sign_In_Sign_In_Button}"
                     Text="Sign in" />
 
@@ -115,7 +124,11 @@
                     <Label
                         FontAttributes="Bold"
                         Text="Sign up"
-                        TextColor="#0041C4" />
+                        TextColor="#0041C4">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding FakeSignUpCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </StackLayout>
             </Grid>
         </yummy:PancakeView>
