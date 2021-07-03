@@ -3,6 +3,7 @@
     x:Class="UIReplicationOne.Views.SignInPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customRenderer="clr-namespace:UIReplicationOne.Renderers"
     xmlns:fontawesome="clr-namespace:UIReplicationOne.Resources.Fonts"
     xmlns:xtk="http://xamarin.com/schemas/2020/toolkit"
     xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
@@ -89,9 +90,8 @@
                                 TextColor="#00b6f8"
                                 VerticalOptions="Center" />
                         </Grid>
-
-
                     </Frame>
+
                 </StackLayout>
 
 
@@ -131,10 +131,11 @@
                 </StackLayout>
 
                 <!--  Fourth form element  -->
-                <Button
+                <customRenderer:CustomButton
                     Grid.Row="3"
                     Command="{Binding FakeSignInCommand}"
                     IsEnabled="{Binding ActionEnable}"
+                    Opacity="{Binding SignInOpacity}"
                     Style="{StaticResource sign_In_Sign_In_Button}"
                     Text="Sign in" />
 

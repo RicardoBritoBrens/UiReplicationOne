@@ -15,6 +15,27 @@ namespace UIReplicationOne.ModelViews
         public ICommand NavigateBackCommand { get; set; }
         public INavigation _navigation { get; set; }
 
+
+        private bool _actionEnable;
+        public bool ActionEnable
+        {
+            get { return _actionEnable; }
+            set
+            {
+                SetProperty(ref _actionEnable, value);
+                SignInOpacity = (ActionEnable) ? 1.0d : 0.5d;
+            }
+        }
+        public double SignInOpacity
+        {
+            get => _signInOpacity;
+            set
+            {
+                _signInOpacity = value;
+                OnPropertyChanged();
+            }
+        }
+        private double _signInOpacity;
         public bool UsernameValid
         {
             get => _usernameValid;
@@ -39,13 +60,13 @@ namespace UIReplicationOne.ModelViews
         public string Username
         {
             get => _username;
-
             set
             {
                 _username = value;
                 OnPropertyChanged();
                 UsernameValid = (!string.IsNullOrWhiteSpace(Username) && Username.Length > 5);
                 ActionEnable = (UsernameValid && PasswordValid);
+
             }
         }
         private string _username;
@@ -59,9 +80,12 @@ namespace UIReplicationOne.ModelViews
                 OnPropertyChanged();
                 PasswordValid = (!string.IsNullOrWhiteSpace(Password) && Password.Length > 5);
                 ActionEnable = (UsernameValid && PasswordValid);
+
             }
         }
         private string _password;
+
+
         public SignInPageViewModel(INavigation navigation)
         {
             FakeSignInCommand = new Command(FakeSignInAsync);
@@ -70,8 +94,9 @@ namespace UIReplicationOne.ModelViews
             NavigateBackCommand = new Command(async () => await NavigateBack());
             UsernameValid = false;
             PasswordValid = false;
+            SignInOpacity = 0.5d;
+            ActionEnable = false;
             _navigation = navigation;
-
         }
 
         private void ForgotPassowrd()
@@ -81,7 +106,7 @@ namespace UIReplicationOne.ModelViews
 
         private void FakeSignUp()
         {
-            DependencyService.Get<IMessage>().LongAlert("Thanks for Sign Up Mr/Ms User");
+            DependencyService.Get<IMessage>().LongAlert("Thanks for sign up, Mr/Ms User");
         }
 
         private void FakeSignInAsync()

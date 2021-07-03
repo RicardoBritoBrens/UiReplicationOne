@@ -31,6 +31,7 @@
     <None Remove="Xamarin.Forms.DebugRainbows" />
     <None Remove="Services\" />
     <None Remove="ModelViews\Base\" />
+    <None Remove="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -39,6 +40,7 @@
     <Folder Include="Resources\Fonts\" />
     <Folder Include="Services\" />
     <Folder Include="ModelViews\Base\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Fonts\FontAwesomeBrandsRegular.otf" />

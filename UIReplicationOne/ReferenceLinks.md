@@ -9,3 +9,4 @@
     - Awesome Brand Icons: https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=brands
 - FontAwesome to C#: https://github.com/matthewrdev/fa2cs
 - Toast Notification: https://logeshpalani.blogspot.com/2020/06/toast-in-xamarin-forms.html
+- Custom Rendeer :https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/entry

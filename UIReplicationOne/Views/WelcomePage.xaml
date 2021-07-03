@@ -3,12 +3,16 @@
     x:Class="UIReplicationOne.Views.WelcomePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:fontawesome="clr-namespace:UIReplicationOne.Resources.Fonts"
     xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     BackgroundColor="#0041C4">
-    <AbsoluteLayout Margin="44" Style="{StaticResource welcomePageBackgroundColor}">
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,1,0.07" AbsoluteLayout.LayoutFlags="All">
+    <Grid
+        Margin="44"
+        RowDefinitions="*,58,80,50,50,50"
+        Style="{StaticResource welcomePageBackgroundColor}">
 
+        <StackLayout Grid.Row="0" />
+
+        <StackLayout Grid.Row="1">
             <!--  First element  -->
             <Label
                 FontSize="Title"
@@ -16,8 +20,7 @@
                 Text="Welcome" />
         </StackLayout>
 
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.6,1,0.04" AbsoluteLayout.LayoutFlags="All">
-
+        <StackLayout Grid.Row="2">
             <!--  Second element  -->
             <Label Style="{StaticResource welcomePageSecondLabel}" Text="Manage Your expenses" />
 
@@ -28,8 +31,8 @@
                 Text="seamlessly &amp; intuitively" />
         </StackLayout>
 
-
         <StackLayout
+            Grid.Row="3"
             AbsoluteLayout.LayoutBounds="0.5,0.8,1,0.07"
             AbsoluteLayout.LayoutFlags="All"
             Spacing="16">
@@ -58,8 +61,10 @@
             <!--  End Fourth element  -->
 
         </StackLayout>
+
+
         <!--  Fifth element  -->
-        <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.88" AbsoluteLayout.LayoutFlags="PositionProportional">
+        <StackLayout Grid.Row="4">
             <Button
                 Command="{Binding FakeCreateAnAccountCommand}"
                 Style="{StaticResource button_Create_An_Account}"
@@ -69,8 +74,7 @@
 
         <!--  Start Sixth element  -->
         <StackLayout
-            AbsoluteLayout.LayoutBounds="0.5,0.9999,1,0.07"
-            AbsoluteLayout.LayoutFlags="All"
+            Grid.Row="5"
             HorizontalOptions="Center"
             Orientation="Horizontal"
             Spacing="0">
@@ -82,5 +86,5 @@
             </Label>
         </StackLayout>
         <!--  End Sixth element  -->
-    </AbsoluteLayout>
+    </Grid>
 </ContentPage>
