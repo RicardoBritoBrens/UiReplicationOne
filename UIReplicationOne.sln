@@ -13,8 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIReplicationOne.UI.Test", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E47C39F0-4C13-470E-B0FD-99943552F435}"
 	ProjectSection(SolutionItems) = preProject
-		Gif One.gif = Gif One.gif
-		Gif Two.gif = Gif Two.gif
+		ExampleUI.jpeg = ExampleUI.jpeg
+		GifOne.gif = GifOne.gif
+		GifTwo.gif = GifTwo.gif
 	EndProjectSection
 EndProject
 Global
