@@ -2,9 +2,13 @@
 
 This is the first of a couple of replications that I am going to create.
 
+![Gif One](https://github.com/RicardoBritoBrens/UiReplicationOne/blob/main/GifOne.gif?raw=true)
+
+![Gif Two](https://github.com/RicardoBritoBrens/UiReplicationOne/blob/main/GifTwo.gif?raw=true)
+
 ## Image source
 
-![example](https://github.com/RicardoBritoBrens/UiReplicationOne/blob/main/UIReplicationOne/ExampleUI.jpeg?raw=true)
+![Image Soruce](https://github.com/RicardoBritoBrens/UiReplicationOne/blob/main/ExampleUI.jpeg?raw=true)
 
 ## Reference Links
 
@@ -18,3 +22,4 @@ This is the first of a couple of replications that I am going to create.
 - Toast Notification: https://logeshpalani.blogspot.com/2020/06/toast-in-xamarin-forms.html
 - Custom Rendeer :https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/custom-renderer/entry
 - Uplabs: https://www.uplabs.com/
+
